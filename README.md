@@ -3,7 +3,7 @@
 An exploration of Leo Shatz's Helix Nebula photograph, combining astronomical
 imagery, catalog-derived stars, and illustrative three-dimensional geometry.
 
-**[Open the viewer](index.html)** on the published GitHub Pages site.
+**[Open the viewer](https://eyeke2.github.io/helix3d/)** on the published GitHub Pages site.
 On GitHub's repository page, use the website link in the repository's About
 section after Pages is enabled; GitHub's file view does not run the player.
 
