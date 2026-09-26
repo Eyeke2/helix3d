@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<!-- Page markup and CSS: MIT, see LICENSE-CODE. Imagery and explanatory text:
+Leo Shatz's contributions under CC BY-NC-SA 4.0, see LICENSE. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How Leo Shatz's Helix Nebula photograph became an interactive 3D interpretation, and why its mapped Gaia stars lie mostly behind the nebula.">
+<title>About the Helix 3D project — Leo Shatz</title>
+<link rel="icon" href="data:,">
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#080b0e;color:#e5ebf0;line-height:1.7}
+*{box-sizing:border-box}body{margin:0}main{max-width:1180px;margin:auto;padding:28px 30px 48px}
+a{color:#91d5df;text-underline-offset:3px}a:hover{color:#c7f3f8}:focus-visible{outline:2px solid #91d5df;outline-offset:5px}
+nav{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;font-size:14px;margin-bottom:38px}
+.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#91d5df;margin:0 0 10px}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.14;font-weight:600;letter-spacing:-.025em;margin:0 0 20px;max-width:24ch}
+.lead{font-size:20px;color:#bac8d3;max-width:65ch}.prose{max-width:78ch}h2{font-size:25px;font-weight:550;line-height:1.3;margin:0 0 18px}h3{font-size:18px;margin:0 0 10px}
+p{margin:0 0 18px}section{margin-top:42px}li{margin:8px 0}strong{color:#f0f5f8}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{padding:24px;background:#111b24;border:1px solid #2c3d4b;border-radius:10px}.card p:last-child{margin-bottom:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.stat{border-left:2px solid #526d86;padding:6px 16px}.stat strong{display:block;font-size:27px}.stat span{color:#b6c3cc;font-size:14px}.stat.near{border-color:#ffca7a}.stat.near strong{color:#ffca7a}.stat.helix{border-color:#71e1cb}.stat.helix strong{color:#71e1cb}.stat.far{border-color:#74baff}.stat.far strong{color:#74baff}
+figure{margin:24px 0}figure img{display:block;width:100%;height:auto;border:1px solid #2c3d4b;border-radius:8px}figcaption{font-size:14px;color:#aabcc9;margin-top:12px;max-width:90ch}
+.note{border-left:3px solid #71e1cb;padding:16px 20px;background:#101d24;max-width:78ch}.note p:last-child{margin:0}
+.reference-video{max-width:880px}.reference-video video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#000;border:1px solid #2c3d4b;border-radius:8px}
+.photo-details{border-top:1px solid #2c3d4b;padding-top:28px}.photo-details p{font-size:15px}.photo-details details{border:1px solid #2c3d4b;border-radius:8px;padding:15px 20px}.photo-details summary{cursor:pointer;color:#91d5df;font-weight:550}.photo-details details[open] summary{margin-bottom:16px}.photo-details dl{font-size:14px;display:grid;grid-template-columns:110px 1fr;gap:10px 18px}.photo-details dt,.photo-details dd{margin:0}
+dl{margin:20px 0}dt{font-weight:600;color:#f0f5f8;margin-top:14px}dd{margin:3px 0 0;color:#bac8d3}
+.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;max-width:760px;margin:20px 0;font-size:15px}caption{text-align:left;color:#b6c3cc;margin-bottom:10px}th,td{text-align:left;padding:12px;border-bottom:1px solid #2c3d4b}th{color:#b6c3cc}td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+footer{border-top:1px solid #2c3d4b;margin-top:40px;padding-top:24px;font-size:13px;color:#a1b2bf}footer p{max-width:90ch}.return{display:inline-block;border:1px solid #526d86;border-radius:7px;padding:10px 16px;text-decoration:none;margin-top:12px}
+@media(max-width:650px){main{padding:20px 18px 36px}nav{margin-bottom:28px}.cards{grid-template-columns:1fr}.card{padding:20px}.lead{font-size:18px}.stats{gap:6px}.stat{padding:4px 9px}.stat strong{font-size:22px}.stat span{font-size:12px}h2{font-size:23px}section{margin-top:32px}}
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Project navigation"><a href="index.html">← Back to the animation</a><a href="https://app.astrobin.com/i/l7pmzx?r=0">Original photograph on AstroBin ↗</a></nav>
+<header>
+<p class="eyebrow">The Helix Nebula · a project by Leo Shatz</p>
+<h1>From a photograph to a view with depth</h1>
+<p class="lead">This variation of the Helix Nebula is an approximate fusion of scientific references and artistic interpretation: my photograph and Gaia star positions, brought into depth using the Chandra reference model and artistic choices where three-dimensional information is missing.</p>
+</header>
+<section aria-labelledby="reference-model">
+<h2 id="reference-model">The Chandra model: the starting geometry</h2>
+<div class="prose">
+<p>The Helix model shared by Chandra was central to this project. Its printable geometry, adapted by the Chandra team from the work of <strong>INAF / Sal Orlando</strong>, provided the underlying three-dimensional structure onto which I mapped my photograph.</p>
+<p>Chandra describes the reference model itself as an impression derived from Hubble observations through several optical filters. It offers a useful interpretation of the nebula’s form, rather than a complete measurement of every structure’s depth.</p>
+</div>
+<figure class="reference-video">
+<video controls playsinline preload="metadata" aria-label="Rotating Helix Nebula reference model credited to INAF and Sal Orlando">
+<source src="https://chandra.harvard.edu/deadstar/helix_3Dtumble.mp4" type="video/mp4">
+Your browser cannot play this video. <a href="https://chandra.harvard.edu/deadstar/helix.html">View the reference model on Chandra’s website.</a>
+</video>
+<figcaption><strong>Reference model, before our adaptation.</strong> Helix Nebula 3D model credit: INAF / Sal Orlando. Video streamed from Chandra; an internet connection is needed. <a href="https://chandra.harvard.edu/deadstar/helix.html">Explore the original model and its printable adaptation on Chandra’s website ↗</a>.</figcaption>
+</figure>
+<div class="prose">
+<p>For the variation presented here, I adapted that starting geometry to the photographed field, extended it to include faint outer hydrogen emission, and added illustrative internal radial globules. Their placement, depth, thickness and transparency fill gaps that the available data cannot resolve.</p>
+<p><strong>The result is deliberately approximate.</strong> Scientific references guide the overall structure; artistic interpretation connects the missing information into a coherent visual experience. The animation presents one possible spatial reading of the photograph, not a definitive reconstruction of the Helix Nebula.</p>
+</div>
+</section>
+<section aria-labelledby="model">
+<h2 id="model">What you are seeing</h2>
+<div class="cards">
+<div class="card"><h3>Grounded in the photograph and catalog</h3>
+<p>The nebula’s texture comes from my color photograph, with aligned H-alpha imagery helping identify faint outer hydrogen emission. The model’s 1,341 mapped Gaia DR3 stars are positioned to match the same photographed field; they are not a randomly generated background.</p>
+<p>Approximate stellar distances come from catalog parallaxes. Star colors use Gaia BP−RP photometry, with enhanced saturation, rather than spectral classifications.</p></div>
+<div class="card"><h3>Depth interpreted for this visualization</h3>
+<p>The Chandra reference supplies the starting form. Our extended outer envelope and 51 internal radial globules add illustrative depths and thicknesses where the photograph cannot establish them.</p>
+<p>Stellar distances are strongly compressed in the animation. Star sizes are adjusted for visibility. Neither the scene’s depth proportions nor its star sizes are shown to physical scale.</p></div>
+</div>
+<p class="prose" style="margin-top:20px">The controller explores a fixed horizontal orbit from −40° to +40° using rendered video frames. Movement represents a changing viewpoint around a static model, not the expansion of the nebula or the motion of stars. This is an interpretation informed by data, not a measured 3D reconstruction.</p>
+<div class="prose">
+<h3>Why the animation uses compressed stellar distances</h3>
+<p>Both the interactive animation and its underlying movie were rendered with a compressed star field. The stars span thousands of light-years, while the nebula occupies a much smaller region. Compressing the stellar depth lets the nebula and surrounding stars remain readable together during a gentle orbit. The stars’ alignment with the photograph and their foreground/background assignment are retained, but the displayed spacing is not a physical distance scale.</p>
+<p>A true-scale plot of the existing stars is possible—the diagram below shows it. A more complete fly-around reconstruction would also need many more stars beyond the narrow field covered by the original photograph, broader catalog coverage and checks on their distances. That larger reconstruction was outside this project’s scope. This presentation explores the photographed field rather than attempting to populate all the surrounding space.</p>
+</div>
+</section>
+<section aria-labelledby="stars">
+<h2 id="stars">Why are most of the mapped stars behind Helix?</h2>
+<p class="prose">Helix lies near the Earth end of the selected star field. The photograph samples a narrow, widening cone of space: farther sections are both wider and, in this sample, extend much farther than the foreground.</p>
+<div class="stats" aria-label="Catalog counts and adopted nebular distance">
+<div class="stat near"><strong>44</strong><span>foreground field stars</span></div>
+<div class="stat helix"><strong>648 ly</strong><span>adopted Helix distance</span></div>
+<div class="stat far"><strong>1,297</strong><span>background field stars</span></div>
+</div>
+<figure>
+<a href="earth-helix-gaia-scale.png" aria-label="Open the Earth, Helix and Gaia diagram at full resolution"><img src="earth-helix-gaia-scale.png" width="2560" height="1600" alt="Side view of Earth, Helix and all 1,341 selected Gaia field stars. Helix is at 198.6 parsecs; the farthest selected star is about 3,330 parsecs away. Orange foreground stars occupy the short near end of a widening blue background star field." decoding="async"></a>
+<figcaption><strong>Panel A:</strong> equal physical scale on both axes, with symbols enlarged for visibility. <strong>Panel B:</strong> the same positions with the transverse direction expanded 6.3×. These are uncompressed catalog-derived positions, unlike the animation. The central white dwarf is represented by the Helix marker and excluded from the field-star counts. <a href="earth-helix-gaia-scale.png">Open the full-resolution diagram</a>.</figcaption>
+</figure>
+<div class="prose">
+<h3>A longer and wider region of space</h3>
+<p>The adopted Helix distance is 198.6 parsecs, about 648 light-years. The farthest selected star is about 10,861 light-years away. Beyond Helix, the sampled region extends another 15.8 Earth–Helix distances.</p>
+<p>Within a fixed angular field, cross-sectional area grows as distance squared and enclosed volume as distance cubed. Even two regions of equal radial length contain different amounts of space:</p>
+</div>
+<div class="table-wrap"><table>
+<caption>Equal-length regions in the current selected catalog</caption>
+<thead><tr><th scope="col">Region</th><th scope="col">Relative volume</th><th scope="col">Stars</th></tr></thead>
+<tbody><tr><th scope="row">Earth → Helix</th><td>1×</td><td>44</td></tr><tr><th scope="row">Helix → twice its distance</th><td>7×</td><td>137</td></tr></tbody>
+</table></div>
+<div class="prose">
+<h3>Selection also shapes the distribution</h3>
+<p>The model selects stars with Gaia G magnitude ≤ 18 and parallax &gt; 0.3 milliarcseconds. With the same parallax cutoff, applying the brightness limit reduces the supplied sample from 66 foreground / 3,523 background stars to 44 / 1,297. It reduces the imbalance rather than creating it.</p>
+<p>Many intrinsically faint distant stars fall below the brightness limit. Galactic structure, stellar luminosities, extinction and survey selection also affect the counts. The much larger background volume explains why a strong imbalance is reasonable, but volume alone cannot predict the observed ratio.</p>
+</div>
+<aside class="note" aria-label="Distance uncertainty"><p><strong>A limit of the data:</strong> these positions use provisional inverse-parallax distances. The supplied export lacks parallax uncertainties and astrometric quality indicators, so individual near/far assignments are not equally certain. The diagram describes our selected model catalog, not a complete census of stars along this sightline.</p></aside>
+</section>
+<section class="prose" aria-labelledby="credits">
+<h2 id="credits">Credits and further reading</h2>
+<ul>
+<li><strong>Photography, creative direction and visualization:</strong> Leo Shatz — <a href="https://app.astrobin.com/i/l7pmzx?r=0">original work on AstroBin</a>.</li>
+<li><strong>Reference geometry:</strong> INAF / Sal Orlando; printable adaptation by the Chandra team — <a href="https://chandra.harvard.edu/deadstar/helix.html">The Helix Nebula in 3D</a>.</li>
+<li><strong>Stellar data:</strong> ESA / Gaia / DPAC — <a href="https://esdcdoi.esac.esa.int/doi/html/data/astronomy/gaia/DR3.html">Gaia Data Release 3</a>.</li>
+<li><strong>Understanding parallax distances:</strong> <a href="https://bailer-jones.www3.mpia.de/gedr3_distances.html">Bailer-Jones et al., Gaia distance estimation</a>. The probabilistic distances described there were not used in this model.</li>
+<li><strong>AI-assisted modeling, visualization and software development:</strong> OpenAI Codex (GPT-6 Astra), directed and reviewed by Leo Shatz.</li>
+</ul>
+</section>
+<section class="photo-details" aria-labelledby="photograph">
+<h2 id="photograph">Original photograph &amp; imaging details</h2>
+<div class="prose">
+<p><a href="https://app.astrobin.com/i/l7pmzx?r=0"><strong>The Helix Nebula and its faint outer structures</strong></a><br>By Leo Shatz · Published <time datetime="2026-09-15">15 September 2026</time></p>
+<p><strong>38 h 5 min integration</strong> · Takahashi FSQ-130ED · Player One Zeus-M Pro · Astro-Physics Mach1 GTO</p>
+</div>
+<details>
+<summary>Exposure breakdown, equipment and processing</summary>
+<div class="table-wrap"><table>
+<caption>Integration by filter</caption>
+<thead><tr><th scope="col">Filter</th><th scope="col">Exposures</th><th scope="col">Integration</th></tr></thead>
+<tbody>
+<tr><th scope="row">Red</th><td>16 × 300 s</td><td>1 h 20 min</td></tr>
+<tr><th scope="row">Green</th><td>16 × 300 s</td><td>1 h 20 min</td></tr>
+<tr><th scope="row">Blue</th><td>15 × 300 s</td><td>1 h 15 min</td></tr>
+<tr><th scope="row">Hα</th><td>145 × 600 s</td><td>24 h 10 min</td></tr>
+<tr><th scope="row">O III</th><td>60 × 600 s</td><td>10 h</td></tr>
+</tbody>
+<tfoot><tr><th scope="row" colspan="2">Total</th><td><strong>38 h 5 min</strong></td></tr></tfoot>
+</table></div>
+<div class="prose">
+<h3>Equipment and processing</h3>
+<dl>
+<dt>Telescope</dt><dd>Takahashi FSQ-130ED</dd>
+<dt>Camera</dt><dd>Player One Zeus-M Pro</dd>
+<dt>Mount</dt><dd>Astro-Physics Mach1 GTO</dd>
+<dt>Filters</dt><dd>Chroma Red, Green and Blue 50 mm; Chroma H-alpha 3 nm Bandpass 50 mm; Chroma O III 3 nm Bandpass 50 mm</dd>
+<dt>Accessories</dt><dd>FLI Atlas focuser; Player One FHD-OAG MAX; Player One Phoenix Wheel 7×2″</dd>
+<dt>Software</dt><dd>Adobe Photoshop; Astro-Physics APCC Pro; Open PHD Guiding Project PHD2; Pleiades Astrophoto PixInsight; Russell Croman Astrophotography BlurXTerminator, NoiseXTerminator and StarXTerminator; Software Bisque TheSky; Stefan Berg Nighttime Imaging ’N’ Astronomy (N.I.N.A.)</dd>
+</dl>
+<p><a href="https://app.astrobin.com/i/l7pmzx?r=0">View the photograph and further acquisition details on AstroBin ↗</a></p>
+</div>
+</details>
+</section>
+<a class="return" href="index.html">← Explore the Helix animation</a>
+<footer>
+<p>© 2026 Leo Shatz. His imagery, diagram and explanatory text: <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Page and player code: <a href="LICENSE-CODE">MIT</a>. Upstream rights remain separate; see the <a href="README.md#licensing">full licensing scope and source notices</a> and <a href="LICENSE">content license</a>. Credits do not imply endorsement.</p>
+<p>Catalog audit: 26 September 2026.</p>
+</footer>
+</main>
+</body>
+</html>

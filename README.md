@@ -3,7 +3,12 @@
 An exploration of Leo Shatz's Helix Nebula photograph, combining astronomical
 imagery, catalog-derived stars, and illustrative three-dimensional geometry.
 
-**[Open the viewer](https://eyeke2.github.io/helix3d/)** on the published GitHub Pages site.
+**[Open the viewer](index.html)** on the published GitHub Pages site.
+Read [About this project and the star field](about.html) for the modeling
+approach, credits and a physical-scale diagram explaining the star population.
+The information page embeds Chandra's rotating INAF / Sal Orlando reference
+model video directly from its official host; that preview requires an internet
+connection. Photo acquisition details are in an expandable section at the bottom.
 On GitHub's repository page, use the website link in the repository's About
 section after Pages is enabled; GitHub's file view does not run the player.
 
@@ -34,6 +39,12 @@ display. Star colors follow Gaia BP−RP photometry, with enhanced saturation;
 they are not derived from measured spectra. Apparent star sizes are adjusted
 for visibility, not shown to physical scale.
 
+Both the animation and underlying movie use compressed stellar distances so
+the nebula and stars remain readable together. A complete fly-around scene
+would need many more stars beyond the photographed field and broader catalog
+and distance checks, outside this project's scope. True-scale plotting of the
+existing sample is possible; the information page includes that diagram.
+
 **This is a blend of astronomical data and artistic interpretation, not a
 measured three-dimensional reconstruction.** The changing view represents
 camera motion around a fixed model, not nebular expansion or stellar motion.
@@ -43,6 +54,8 @@ camera motion around a fixed model, not nebular expansion or stellar motion.
 | File | Purpose |
 | --- | --- |
 | `index.html` | Player, controls and embedded Earth-view poster |
+| `about.html` | Project information, model limitations and star-field explanation |
+| `earth-helix-gaia-scale.png` | Physical-scale Earth–Helix–Gaia diagram, 2560 × 1600 |
 | `helix-orbit.mp4` | 401 rendered views, 1920 × 1388, H.264, about 15.7 MB |
 | `README.md` | Description, instructions, credits and licensing scope |
 | `LICENSE` | CC BY-NC-SA 4.0 notice and complete legal text for creative content |
@@ -63,7 +76,7 @@ own slower timing. Seeking responsiveness depends on the device and connection.
 ## Credits
 
 - **Imaging, creative direction and visualization:** Leo Shatz
-  ([spinlock on AstroBin](https://app.astrobin.com/u/spinlock?i=l7pmzx)).
+  ([The Helix Nebula and its faint outer structures on AstroBin](https://app.astrobin.com/i/l7pmzx?r=0)).
 - **Reference geometry:** INAF / Sal Orlando; printable adaptation by the
   Chandra team. [The Helix Nebula in 3D](https://chandra.harvard.edu/deadstar/helix.html).
   The reference geometry was adapted to Leo's image and supplemented with
@@ -81,7 +94,7 @@ endorsement by the named institutions or services.
 Copyright © 2026 Leo Shatz, for his copyrightable contributions.
 
 **Imagery and explanatory text:** Leo's contributions to the rendered video,
-embedded poster, and explanatory text are licensed under
+embedded poster, star-distance diagram, and explanatory text are licensed under
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 (**CC BY-NC-SA 4.0**). See [LICENSE](LICENSE) for the scope and full terms.
 In summary, noncommercial sharing and adaptation are permitted with appropriate
@@ -90,10 +103,11 @@ use the same license or an allowed compatible license. The legal text governs.
 CC BY-NC-SA does not require supplying the unpublished meshes, source images
 or rendering tools. The license cannot be revoked for compliant recipients.
 
-**Player code:** The HTML markup, CSS and JavaScript implementing the player
+**Page and player code:** The HTML markup, CSS and JavaScript implementing the player
+and information page
 are licensed under [MIT](LICENSE-CODE). This permits commercial reuse of the
 player code, but does **not** grant commercial-use permission for the video,
-embedded poster or explanatory text. Remove or replace those assets if reusing
+embedded poster, star-distance diagram or explanatory text. Remove or replace those assets if reusing
 the player outside their license terms.
 
 **Third-party material:** These licenses grant only rights Leo is entitled to

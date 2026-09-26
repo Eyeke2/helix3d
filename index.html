@@ -12,6 +12,7 @@ Third-party rights are excluded; see README.md for credits and scope. -->
 :root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#080b0e;color:#e5ebf0}
 *{box-sizing:border-box}body{margin:0}main{max-width:1800px;margin:auto;padding:18px 22px}
 header{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}h1{font-size:21px;font-weight:550;margin:0}header p{color:#a6b2bc;margin:0;font-size:14px}
+header .about-link{margin-left:auto;font-size:14px;text-underline-offset:3px;padding:6px 0}
 .controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:15px 0 12px}button{font:inherit;font-size:14px;color:inherit;background:#192129;border:1px solid #40515e;border-radius:7px;padding:8px 13px;cursor:pointer}button:hover{background:#27343f}button:disabled{opacity:.5;cursor:wait}
 .angle-control{display:flex;align-items:center;gap:10px;flex:1;min-width:220px;max-width:620px;font-size:14px}input{width:100%;min-width:80px;accent-color:#72cfdb}output{min-width:54px;font-variant-numeric:tabular-nums;text-align:right}
 :focus-visible{outline:2px solid #72cfdb;outline-offset:4px}
@@ -24,7 +25,7 @@ footer{max-width:960px;margin:15px auto 0;color:#91a1ae;font-size:12px;line-heig
 </head>
 <body>
 <main>
-<header><h1>Helix Nebula</h1><p>A three-dimensional interpretation by Leo Shatz</p></header>
+<header><h1>Helix Nebula</h1><p>A three-dimensional interpretation by Leo Shatz</p><a class="about-link" href="about.html">About this project &amp; the star field →</a></header>
 <div class="controls">
   <button id="earth" disabled>Earth view</button>
   <button id="play" disabled aria-pressed="false">Play sweep</button>
@@ -44,7 +45,7 @@ footer{max-width:960px;margin:15px auto 0;color:#91a1ae;font-size:12px;line-heig
 <footer>
   <p>This view follows a fixed horizontal orbit. Nebular depth and internal globules are illustrative; Gaia-derived stellar distances are compressed for display.</p>
   <p>Imaging and visualization: © Leo Shatz. Geometry reference: INAF / Sal Orlando; printable adaptation by the <a href="https://chandra.harvard.edu/deadstar/helix.html" target="_blank" rel="noopener noreferrer">Chandra team</a>. Stellar data: ESA / Gaia / DPAC.</p>
-  <p><a href="helix-orbit.mp4">Open the video</a></p>
+  <p><a href="about.html">About this project &amp; the star field</a> · <a href="helix-orbit.mp4">Open the video</a></p>
   <p>Imagery and text: © 2026 Leo Shatz, <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> for his contributions. Player code: <a href="LICENSE-CODE">MIT</a>. <a href="README.md">Credits and licensing scope</a>.</p>
 </footer>
 </main>

@@ -1,8 +1,9 @@
 Scope notice (not part of the MIT license text)
 
 This license applies only to the HTML markup, CSS and JavaScript implementing
-the player in index.html, and any copyrightable contributions to that code
-that Leo Shatz is entitled to license. It excludes helix-orbit.mp4, the poster
+the player in index.html and the information page in about.html, and any
+copyrightable contributions to that code that Leo Shatz is entitled to license.
+It excludes helix-orbit.mp4, earth-helix-gaia-scale.png, the poster
 image embedded in index.html (including its base64 data), and the explanatory
 text. Those creative assets are addressed in LICENSE. Third-party rights are
 not granted by this notice. The MIT license below is unmodified except for
