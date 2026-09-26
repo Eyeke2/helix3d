@@ -20,6 +20,11 @@ section after Pages is enabled; GitHub's file view does not run the player.
 - Select **Play sweep** for an automatic back-and-forth orbit; select **Pause**
   to stop it. Manual input also stops the sweep.
 - On a touchscreen, drag horizontally over the image.
+- Select **About this project** beside the controls for the reference model,
+  star-distance diagram and imaging details.
+
+Desktop layouts place the model notes, credits and license links beside the
+player. On narrower screens these notes appear below it.
 
 The viewing range is **−40° to +40°**. This page selects frames from a
 pre-rendered video; it follows a fixed horizontal orbit rather than rendering
@@ -58,7 +63,7 @@ camera motion around a fixed model, not nebular expansion or stellar motion.
 | `earth-helix-gaia-scale.png` | Physical-scale Earth–Helix–Gaia diagram, 2560 × 1600 |
 | `helix-orbit.mp4` | 401 rendered views, 1920 × 1388, H.264, about 15.7 MB |
 | `README.md` | Description, instructions, credits and licensing scope |
-| `LICENSE` | CC BY-NC-SA 4.0 notice and complete legal text for creative content |
+| `LICENSE.md` | CC BY-NC-SA 4.0 notice and complete legal text for creative content |
 | `LICENSE-CODE` | MIT license for the player code |
 
 Keep these files together at the repository root. For GitHub Pages, select
@@ -96,7 +101,7 @@ Copyright © 2026 Leo Shatz, for his copyrightable contributions.
 **Imagery and explanatory text:** Leo's contributions to the rendered video,
 embedded poster, star-distance diagram, and explanatory text are licensed under
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-(**CC BY-NC-SA 4.0**). See [LICENSE](LICENSE) for the scope and full terms.
+(**CC BY-NC-SA 4.0**). See [LICENSE.md](LICENSE.md) for the scope and full terms.
 In summary, noncommercial sharing and adaptation are permitted with appropriate
 credit, a license link, and identification of changes; shared adaptations must
 use the same license or an allowed compatible license. The legal text governs.
