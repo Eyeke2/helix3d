@@ -60,7 +60,7 @@ camera motion around a fixed model, not nebular expansion or stellar motion.
 | --- | --- |
 | `index.html` | Player, controls and embedded Earth-view poster |
 | `about.html` | Project information, model limitations and star-field explanation |
-| `earth-helix-gaia-scale.png` | Physical-scale Earth–Helix–Gaia diagram, 2560 × 1600 |
+| `earth-helix-gaia-scale.png` | Physical-scale and compressed-animation star diagrams, 2560 × 2400 |
 | `helix-orbit.mp4` | 401 rendered views, 1920 × 1388, H.264, about 15.7 MB |
 | `README.md` | Description, instructions, credits and licensing scope |
 | `LICENSE.md` | CC BY-NC-SA 4.0 notice and complete legal text for creative content |
