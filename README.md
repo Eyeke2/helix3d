@@ -65,12 +65,18 @@ camera motion around a fixed model, not nebular expansion or stellar motion.
 | `README.md` | Description, instructions, credits and licensing scope |
 | `LICENSE.md` | CC BY-NC-SA 4.0 notice and complete legal text for creative content |
 | `LICENSE-CODE` | MIT license for the player code |
+| `readme.html` | Formatted browser version of this project guide |
+| `license.html` | Formatted creative-content license and scope notice |
+| `license-code.html` | Formatted MIT code license and scope notice |
 
 Keep these files together at the repository root. For GitHub Pages, select
 **Settings → Pages → Deploy from a branch**, choose the branch containing
 these files and **/(root)**, then save. Add the published site address to the
 repository's About section. No build step or third-party JavaScript libraries
-are required. For local use, open `index.html` with the MP4 beside it.
+are required to host or view the supplied files. For local use, open
+`index.html` with the MP4 beside it. Website links open the formatted HTML
+documents; the Markdown and plain-text originals remain available in the
+repository and through download links on those pages.
 
 Only finished imagery and the lightweight player are distributed here. The
 underlying meshes, original astronomy files, star catalog and rendering tools
@@ -109,7 +115,7 @@ CC BY-NC-SA does not require supplying the unpublished meshes, source images
 or rendering tools. The license cannot be revoked for compliant recipients.
 
 **Page and player code:** The HTML markup, CSS and JavaScript implementing the player
-and information page
+and information/documentation pages
 are licensed under [MIT](LICENSE-CODE). This permits commercial reuse of the
 player code, but does **not** grant commercial-use permission for the video,
 embedded poster, star-distance diagram or explanatory text. Remove or replace those assets if reusing

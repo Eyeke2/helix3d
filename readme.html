@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Project guide and credits — Helix 3D</title><link rel="icon" href="data:,"><style>:root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#080b0e;color:#e5ebf0;line-height:1.75}*{box-sizing:border-box}body{margin:0}main{max-width:1000px;margin:auto;padding:26px 28px 48px}a{color:#91d5df;text-underline-offset:3px;overflow-wrap:anywhere}:focus-visible{outline:2px solid #91d5df;outline-offset:4px}nav{display:flex;flex-wrap:wrap;gap:12px 22px;font-size:14px;margin-bottom:32px}h1{font-size:clamp(27px,4vw,38px);line-height:1.2}h2{font-size:24px;line-height:1.35;margin-top:38px}h3{font-size:19px;margin-top:28px}p,li{max-width:80ch}li{margin:7px 0}blockquote{margin:22px 0;padding:12px 22px;border-left:3px solid #71e1cb;background:#101d24}code{background:#192630;border-radius:4px;padding:2px 5px;font-size:.9em;overflow-wrap:anywhere}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #344552}th{color:#bac8d3}.legal-clause{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:20px 0;line-height:1.75}.source{color:#afbdc8;font-size:14px;border-bottom:1px solid #344552;padding-bottom:20px}hr{border:0;border-top:1px solid #344552;margin:28px 0}footer{border-top:1px solid #344552;margin-top:40px;padding-top:20px;font-size:13px;color:#afbdc8}@media(max-width:600px){main{padding:18px 16px 32px}h2{font-size:21px}.legal-clause{font-size:14px}th,td{padding:8px}}</style></head><body><main>
+<nav aria-label="Project navigation"><a href="index.html">← Animation</a><a href="about.html">About the project</a><a href="readme.html">Project guide</a><a href="license.html">Content license</a><a href="license-code.html">Code license</a></nav>
+<p class="source">Formatted from <a href="README.md" download>README.md</a>. The source file remains available for download.</p>
+<h1 id="helix-nebula-an-interactive-3d-interpretation">Helix Nebula — an interactive 3D interpretation</h1>
+<p>An exploration of Leo Shatz&#39;s Helix Nebula photograph, combining astronomical
+imagery, catalog-derived stars, and illustrative three-dimensional geometry.</p>
+<p><strong><a href="index.html">Open the viewer</a></strong> on the published GitHub Pages site.
+Read <a href="about.html">About this project and the star field</a> for the modeling
+approach, credits and a physical-scale diagram explaining the star population.
+The information page embeds Chandra&#39;s rotating INAF / Sal Orlando reference
+model video directly from its official host; that preview requires an internet
+connection. Photo acquisition details are in an expandable section at the bottom.
+On GitHub&#39;s repository page, use the website link in the repository&#39;s About
+section after Pages is enabled; GitHub&#39;s file view does not run the player.</p>
+<h2 id="explore">Explore</h2>
+<ul>
+<li>Drag horizontally or scroll over the image to change the viewing angle.</li>
+<li>Use the angle slider or arrow keys for precise control.</li>
+<li>Select <strong>Earth view</strong> to return to the original viewing direction.</li>
+<li>Select <strong>Play sweep</strong> for an automatic back-and-forth orbit; select <strong>Pause</strong>
+to stop it. Manual input also stops the sweep.</li>
+<li>On a touchscreen, drag horizontally over the image.</li>
+<li>Select <strong>About this project</strong> beside the controls for the reference model,
+star-distance diagram and imaging details.</li>
+</ul>
+<p>Desktop layouts place the model notes, credits and license links beside the
+player. On narrower screens these notes appear below it.</p>
+<p>The viewing range is <strong>−40° to +40°</strong>. This page selects frames from a
+pre-rendered video; it follows a fixed horizontal orbit rather than rendering
+a freely navigable 3D scene in your browser. It includes no audio.</p>
+<h2 id="what-the-visualization-represents">What the visualization represents</h2>
+<p>The nebula&#39;s visible texture comes from Leo&#39;s color photograph, with aligned
+H-alpha imagery helping identify faint outer emission. Its broad geometry is
+adapted from the Chandra team&#39;s printable version of the INAF / Sal Orlando
+Helix model. The extended outer envelope and 51 internal radial features use
+illustrative depths and thicknesses chosen for this visualization.</p>
+<p>The star field contains 1,341 mapped Gaia DR3 sources. Approximate stellar
+distances were estimated from catalog parallaxes and strongly compressed for
+display. Star colors follow Gaia BP−RP photometry, with enhanced saturation;
+they are not derived from measured spectra. Apparent star sizes are adjusted
+for visibility, not shown to physical scale.</p>
+<p>Both the animation and underlying movie use compressed stellar distances so
+the nebula and stars remain readable together. A complete fly-around scene
+would need many more stars beyond the photographed field and broader catalog
+and distance checks, outside this project&#39;s scope. True-scale plotting of the
+existing sample is possible; the information page includes that diagram.</p>
+<p><strong>This is a blend of astronomical data and artistic interpretation, not a
+measured three-dimensional reconstruction.</strong> The changing view represents
+camera motion around a fixed model, not nebular expansion or stellar motion.</p>
+<h2 id="files-and-hosting">Files and hosting</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>File</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>index.html</code></td>
+<td>Player, controls and embedded Earth-view poster</td>
+</tr>
+<tr>
+<td><code>about.html</code></td>
+<td>Project information, model limitations and star-field explanation</td>
+</tr>
+<tr>
+<td><code>earth-helix-gaia-scale.png</code></td>
+<td>Physical-scale and compressed-animation star diagrams, 2560 × 2400</td>
+</tr>
+<tr>
+<td><code>helix-orbit.mp4</code></td>
+<td>401 rendered views, 1920 × 1388, H.264, about 15.7 MB</td>
+</tr>
+<tr>
+<td><code>README.md</code></td>
+<td>Description, instructions, credits and licensing scope</td>
+</tr>
+<tr>
+<td><code>LICENSE.md</code></td>
+<td>CC BY-NC-SA 4.0 notice and complete legal text for creative content</td>
+</tr>
+<tr>
+<td><code>LICENSE-CODE</code></td>
+<td>MIT license for the player code</td>
+</tr>
+<tr>
+<td><code>readme.html</code></td>
+<td>Formatted browser version of this project guide</td>
+</tr>
+<tr>
+<td><code>license.html</code></td>
+<td>Formatted creative-content license and scope notice</td>
+</tr>
+<tr>
+<td><code>license-code.html</code></td>
+<td>Formatted MIT code license and scope notice</td>
+</tr>
+</tbody></table></div>
+<p>Keep these files together at the repository root. For GitHub Pages, select
+<strong>Settings → Pages → Deploy from a branch</strong>, choose the branch containing
+these files and <strong>/(root)</strong>, then save. Add the published site address to the
+repository&#39;s About section. No build step or third-party JavaScript libraries
+are required to host or view the supplied files. For local use, open
+<code>index.html</code> with the MP4 beside it. Website links open the formatted HTML
+documents; the Markdown and plain-text originals remain available in the
+repository and through download links on those pages.</p>
+<p>Only finished imagery and the lightweight player are distributed here. The
+underlying meshes, original astronomy files, star catalog and rendering tools
+are not included. The video contains 0.2° angular steps; its 13.367-second
+duration is an angle lookup sequence. The player&#39;s automatic sweep uses its
+own slower timing. Seeking responsiveness depends on the device and connection.</p>
+<h2 id="credits">Credits</h2>
+<ul>
+<li><strong>Imaging, creative direction and visualization:</strong> Leo Shatz
+(<a href="https://app.astrobin.com/i/l7pmzx?r=0">The Helix Nebula and its faint outer structures on AstroBin</a>).</li>
+<li><strong>Reference geometry:</strong> INAF / Sal Orlando; printable adaptation by the
+Chandra team. <a href="https://chandra.harvard.edu/deadstar/helix.html">The Helix Nebula in 3D</a>.
+The reference geometry was adapted to Leo&#39;s image and supplemented with
+illustrative internal globules and an extended outer envelope.</li>
+<li><strong>Stellar catalog:</strong> ESA / Gaia, Gaia Data Processing and Analysis Consortium
+(DPAC), Data Release 3.</li>
+<li><strong>AI-assisted modeling, visualization and software development:</strong> OpenAI
+Codex (GPT-6 Astra), directed and reviewed by Leo Shatz.</li>
+</ul>
+<p>These credits acknowledge contributions and sources; they do not imply
+endorsement by the named institutions or services.</p>
+<h2 id="licensing">Licensing</h2>
+<p>Copyright © 2026 Leo Shatz, for his copyrightable contributions.</p>
+<p><strong>Imagery and explanatory text:</strong> Leo&#39;s contributions to the rendered video,
+embedded poster, star-distance diagram, and explanatory text are licensed under
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a>
+(<strong>CC BY-NC-SA 4.0</strong>). See <a href="license.html">LICENSE.md</a> for the scope and full terms.
+In summary, noncommercial sharing and adaptation are permitted with appropriate
+credit, a license link, and identification of changes; shared adaptations must
+use the same license or an allowed compatible license. The legal text governs.
+CC BY-NC-SA does not require supplying the unpublished meshes, source images
+or rendering tools. The license cannot be revoked for compliant recipients.</p>
+<p><strong>Page and player code:</strong> The HTML markup, CSS and JavaScript implementing the player
+and information/documentation pages
+are licensed under <a href="license-code.html">MIT</a>. This permits commercial reuse of the
+player code, but does <strong>not</strong> grant commercial-use permission for the video,
+embedded poster, star-distance diagram or explanatory text. Remove or replace those assets if reusing
+the player outside their license terms.</p>
+<p><strong>Third-party material:</strong> These licenses grant only rights Leo is entitled to
+grant. They do not relicense the INAF / Sal Orlando reference model, the
+Chandra adaptation, Gaia data, logos, trademarks, or other third-party material;
+any applicable upstream rights and terms remain separate. No restrictions are
+added to public-domain elements or uses allowed by law.</p>
+<p>Chandra&#39;s source page identifies the model&#39;s creators, but an explicit
+STL-specific reuse license was not identified on the linked pages. Its
+<a href="https://chandra.harvard.edu/photo/image_use.html">usage policy</a> distinguishes
+Chandra-produced content from externally supplied material. Attribution is not
+a substitute for any permission required from upstream rights holders; the
+licenses in this repository do not certify clearance of those rights.</p>
+<h3 id="suggested-attribution">Suggested attribution</h3>
+<blockquote>
+<p>Helix Nebula — an interactive 3D interpretation, © Leo Shatz, CC BY-NC-SA 4.0
+(Leo Shatz&#39;s imagery and creative contributions). Reference geometry:
+INAF / Sal Orlando, printable adaptation by the Chandra team. Stellar data:
+ESA / Gaia / DPAC. Player code: MIT.</p>
+</blockquote>
+<p>When sharing, include a link to the source repository or published viewer and
+the CC license, retain relevant notices, and describe any changes you made.
+The supplied media carries a © Leo Shatz watermark at 25% opacity.</p>
+
+<footer><a href="index.html">Return to the animation</a> · <a href="about.html">Project background and credits</a></footer>
+</main></body></html>
